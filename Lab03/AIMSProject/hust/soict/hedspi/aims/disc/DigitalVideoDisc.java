@@ -1,3 +1,4 @@
+package hust.soict.hedspi.aims.disc;
 public class DigitalVideoDisc {
     private static int nbDigitalVideoDiscs = 0;
     private int id;
@@ -47,7 +48,6 @@ public class DigitalVideoDisc {
         return nbDigitalVideoDiscs;
     }
 
-    // Thêm phương thức setTitle để thay đổi title
     public void setTitle(String title) {
         this.title = title;
     }

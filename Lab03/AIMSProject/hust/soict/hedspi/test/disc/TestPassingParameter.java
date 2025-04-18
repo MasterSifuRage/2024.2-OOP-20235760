@@ -1,3 +1,7 @@
+package hust.soict.hedspi.test.disc;
+
+import hust.soict.hedspi.aims.media.DigitalVideoDisc;
+
 public class TestPassingParameter {
     public static void main(String[] args) {
         DigitalVideoDisc avengersDVD = new DigitalVideoDisc("The Avengers");
@@ -18,9 +22,9 @@ public class TestPassingParameter {
     }
 
     public static void swap(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
-        String temp = dvd1.getTitle();      // Lưu tiêu đề của dvd1
-        dvd1.setTitle(dvd2.getTitle());     // Gán tiêu đề của dvd2 cho dvd1
-        dvd2.setTitle(temp);                // Gán tiêu đề tạm cho dvd2
+        String temp = dvd1.getTitle();
+        dvd1.setTitle(dvd2.getTitle());
+        dvd2.setTitle(temp);
     }
 
     public static void changeTitle(DigitalVideoDisc dvd, String title) {
