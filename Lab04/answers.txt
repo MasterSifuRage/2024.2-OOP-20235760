@@ -1,0 +1,24 @@
+Lab04
+Programming with AWT and Swing is quite similar (similar elements including container/components, and 
+event-handling). However, there are some differences that you need to note: 
+- Compare the top-level containers in Swing and AWT 
+- Compare the class name of components in AWT and the corresponding class’s name in Swing 
+- Compare the event-handling of Swing and AWT applications 
+The resulting appearances of the applications developed using Swing and AWT might be different as well. 
+Make comparisons.
+
+So sánh top-level containers trong AWT và Swing:  
+- AWT: Sử dụng các container heavyweight như `Frame`, `Dialog`, `Window`, phụ thuộc vào hệ điều hành, gây khác biệt giao diện trên các nền tảng.  
+- Swing: Dùng các container như `JFrame`, `JDialog`, `JWindow`, chủ yếu lightweight (trừ top-level), được vẽ bằng Java, đảm bảo giao diện thống nhất trên mọi hệ điều hành.  
+
+So sánh tên lớp thành phần trong AWT và Swing:  
+- AWT: Các lớp có tên đơn giản như `Button`, `Label`, `TextField`, không tiền tố.  
+- Swing: Các lớp tương ứng có tiền tố "J" như `JButton`, `JLabel`, `JTextField`, đồng thời bổ sung thành phần mới như `JSpinner`, `JProgressBar`.  
+
+So sánh xử lý sự kiện trong AWT và Swing:  
+- AWT: Dựa trên gói `java.awt.event`, dùng listener như `ActionListener`, thường triển khai qua anonymous class, không có cơ chế thread an toàn.  
+- Swing: Mở rộng từ AWT, hỗ trợ listener nâng cao như `ChangeListener` cho `JSlider`, tích hợp EDT (Event Dispatch Thread) để xử lý sự kiện an toàn.  
+
+Khác biệt giao diện:  
+- AWT: Giao diện bị ảnh hưởng bởi hệ điều hành, không đồng nhất (ví dụ: nút trên Windows khác với macOS).  
+- Swing: Cung cấp giao diện đồng nhất nhờ Java vẽ, hỗ trợ tùy chỉnh qua Look and Feel (ví dụ: Metal, Windows, Motif), linh hoạt hơn AWT.
